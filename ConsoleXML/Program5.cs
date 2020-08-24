@@ -36,6 +36,7 @@ namespace ConsoleXML
                         lector.Read();
                         lector.Read();
                         lector.Read();
+
                         p1.Edad = Convert.ToInt32(lector.Value);
                         listaPersonas.Add(p1);
 
