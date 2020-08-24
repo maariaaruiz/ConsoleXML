@@ -14,37 +14,61 @@ namespace ConsoleXML
            
             List<Persona> listaPersonas = new List<Persona>();
             XmlReader lector = new XmlTextReader("../../PersonaNueva.xml");
+            Persona p = new Persona();
+            //opcion menos adecuada
+            //while (lector.Read())
+            //{
+            //    if (lector.NodeType == XmlNodeType.Element)
+            //    {
+            //        if (lector.Name.Equals("persona"))
+            //        {
+            //            Persona p1 = new Persona();
 
+            //            lector.Read();
+            //            lector.Read();
+            //            lector.Read();
+            //            p1.Nombre = lector.Value;
+            //            lector.Read();
+            //            lector.Read();
+            //            lector.Read();
+            //            lector.Read();
+            //            p1.Apellidos = lector.Value;
+            //            lector.Read();
+            //            lector.Read();
+            //            lector.Read();
+            //            lector.Read();
+
+            //            p1.Edad = Convert.ToInt32(lector.Value);
+            //            listaPersonas.Add(p1);
+
+            //        }
+            //    }
+            //}
+
+            //opcion recomendada
             while (lector.Read())
             {
                 if (lector.NodeType == XmlNodeType.Element)
                 {
-                    if (lector.Name.Equals("persona"))
+                    if (lector.Name.Equals("nombre"))
                     {
-                        Persona p1 = new Persona();
-
                         lector.Read();
+                        p.Nombre = lector.Value;
+                    }else if(lector.Name.Equals("apellidos"))
+                    {
                         lector.Read();
+                        p.Apellidos = lector.Value;
+                    }else if (lector.Name.Equals("edad"))
+                    {
                         lector.Read();
-                        p1.Nombre = lector.Value;
-                        lector.Read();
-                        lector.Read();
-                        lector.Read();
-                        lector.Read();
-                        p1.Apellidos = lector.Value;
-                        lector.Read();
-                        lector.Read();
-                        lector.Read();
-                        lector.Read();
-
-                        p1.Edad = Convert.ToInt32(lector.Value);
-                        listaPersonas.Add(p1);
-
+                        p.Edad = Convert.ToInt32(lector.Value);
+                        listaPersonas.Add(p);
+                        p = new Persona();
                     }
                 }
             }
 
-
+          
 
 
             foreach (Persona persona in listaPersonas)

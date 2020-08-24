@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleXML.Program5</StartupObject>
+    <StartupObject>ConsoleXML.Program6</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Persona.cs" />
+    <Compile Include="Program6.cs" />
     <Compile Include="Program5.cs" />
     <Compile Include="Program4.cs" />
     <Compile Include="Program3.cs" />
