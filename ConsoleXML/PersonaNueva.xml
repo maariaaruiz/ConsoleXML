@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<personas>
+  <persona>
+    <nombre>Olga</nombre>
+    <apellidos>Ortiz</apellidos>
+    <edad>12</edad>
+  </persona>
+  <persona>
+    <nombre>Lola</nombre>
+    <apellidos>Lopez</apellidos>
+    <edad>22</edad>
+  </persona>
+   <persona>
+    <nombre>Carlos</nombre>
+    <apellidos>Bravo</apellidos>
+    <edad>51</edad>
+  </persona>
+  
+</personas>
