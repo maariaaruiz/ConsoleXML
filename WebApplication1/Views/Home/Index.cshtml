@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+
+
+<script type="text/javascript">
+
+    function mensaje() {
+        //var mensaje="hola que tal";
+
+        //objeto de javascript, hasta javascript es6 no llegan las clases
+        var objeto = {
+            mensaje: "Hola objeto", mifuncion: function () {
+                alert("funciona");
+
+
+            }
+        };
+        objeto.mifuncion();
+        console.log(objeto);
+
+        //var midocumento=document
+        //.getElementsByTagName("body")[0];
+
+        //var p=document.createElement("p");
+        //var texto=document.createTextNode(objeto.mensaje);
+        //p.appendChild(texto);
+        //             midocumento.appendChild(p);
+
+
+
+    }
+
+    //al iniciar la pagina
+    $(document).ready(function () {
+        alert("funciona");
+    });
+</script>
+
+<br />
+<input type="button" value="Pulsame" onclick="mensaje()" style="background-color:dodgerblue; color:white; border-color:dodgerblue">
+   
+    }

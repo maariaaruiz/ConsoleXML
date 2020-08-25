@@ -27,6 +27,7 @@ namespace ConsoleXML
             Console.ReadLine();
 
         }
-
+        //en cuanto a ADO.NET
+        //en los servicios suelen utilzarse los DTO
     }
 }
